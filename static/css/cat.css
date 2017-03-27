@@ -3,7 +3,7 @@
     top: 10px;
 }
 .a-num-of-cat{
-    background:url(static/img/cat head.png);
+    background:url(./static/img/cat head.png);
     min-width: 50px;
     min-height: 30px;
 }
