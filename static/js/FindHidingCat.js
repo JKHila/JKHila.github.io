@@ -21,7 +21,7 @@ var data = [
     },
 ]
 var sound={
-    src:"url(sound)",
+    src:"/static/sound/catsound.mp3",
     on:'click'
 }
 function init(frame) {
