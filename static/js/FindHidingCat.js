@@ -50,4 +50,23 @@ function init(frame) {
 function UpdateFoundCatText(){
     var text = document.getElementById("TextUI");
     text.setAttribute('value',"x " + ++foundCat);
+
+    if(foundCat == data.length){
+        var entityEl = document.createElement('a-image');
+        var camera = document.getElementById('camera');
+        camera.appendChild(entityEl);
+        entityEl.setAttribute('id', 'popup');
+        entityEl.setAttribute('geometry', {
+            primitive : 'plane',
+            height : 1.2,
+            width : 2
+        });
+        entityEl.setAttribute('material', 'src', "/images/ad.png");
+        entityEl.setAttribute('position', {x:0, y:0, z:-1});
+        entityEl.addEventListener('click',function click(){
+            console.log('click');
+            window.open('http://www.neko.co.kr/', 'newWindow');
+        });
+    }
 }
+
